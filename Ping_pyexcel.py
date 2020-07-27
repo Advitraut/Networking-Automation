@@ -162,7 +162,7 @@ def Ping(sheet,sheet_title,ping_ip,num,file_name):
             for item in List:
                 print(item)
                 output1= remote_conn.send_command("ping -a %s %s" % (item,ping_ip) )
-                print("ping -a %s %s" % (item," 8.8.8.8"))
+                print("ping -a %s %s" % (item,ping_ip))
                 print (output1)
 
                 
